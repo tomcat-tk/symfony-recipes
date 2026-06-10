@@ -1,0 +1,7 @@
+{
+    "recipes": {
+        "tomcat-tk/external-api": [
+            "1.0"
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+external_api:
+  services:
+    httpbin:
+      provider:
+        base_uri: "https://dummyjson.com"
+        allow_methods: ["GET", "POST"]
+
+      auth:
+        login:
+          enabled: false
+          login_url: "https://dummyjson.com/auth/login"
+          username: "emilys"
+          password: "emilyspass"
+          token_from: "accessToken"
+          refresh_token_from: "refreshToken"
+          class: ExternalApi\Auth\Provider\LoginAuthProvider
+
+        bearer:
+          enabled: false
+          class: ExternalApi\Auth\Provider\BearerTokenAuthProvider
+
+      decorators:
+        cache:
+          enabled: true
+          ttl: 60
+
+        retry:
+          enabled: true
+          attempts: 5
+          delay_ms: 500
+
+        rate_limit:
+          enabled: true
+          rps: 0.5
+
+        circuit_breaker:
+          enabled: true
+          failures: 3
+          reset_seconds: 10
+
+        logging:
+          enabled: false

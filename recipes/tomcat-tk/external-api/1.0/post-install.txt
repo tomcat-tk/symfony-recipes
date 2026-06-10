@@ -1,0 +1,3 @@
+xternal API Bundle installed.
+
+Configure your services in config/packages/external_api.yaml
