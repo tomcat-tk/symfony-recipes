@@ -1,3 +1,4 @@
+# config/packages/external_api.yaml
 external_api:
   services:
     httpbin:
