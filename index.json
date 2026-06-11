@@ -1,9 +1,7 @@
 {
     "recipes": {
-        "tomcat-tk/external-api": {
-            "1.0": {
-                "manifest": "recipes/tomcat-tk/external-api/1.0/manifest.json"
-            }
-        }
+        "tomcat-tk/external-api": [
+            "1.0"
+        ]
     }
 }
