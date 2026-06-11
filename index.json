@@ -1,9 +1,14 @@
 {
     "recipes": {
-        "tomcat-tk/external-api": {
-            "1.0": {
-                "manifest": "recipes/tomcat-tk/external-api/1.0/manifest.json"
-            }
-        }
+        "tomcat-tk/external-api": [
+            "1.0"
+        ]
+    },
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/tomcat-tk/symfony-recipes",
+        "origin_template": "{package}:{version}@github.com/tomcat-tk/symfony-recipes:main",
+        "recipe_template": "https://raw.githubusercontent.com/tomcat-tk/symfony-recipes/main/{package_dotted}.{version}.json"
     }
 }
