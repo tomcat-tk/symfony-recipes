@@ -1,0 +1,11 @@
+{
+    "packages": {
+        "tomcat-tk/external-api": {
+            "1.0.0": {
+                "recipe": {
+                    "manifest": "tomcat-tk/external-api/1.0/manifest.json"
+                }
+            }
+        }
+    }
+}
